@@ -1,8 +1,7 @@
 ``pybongtvapi``
 ===============
 
-``pybongtvapi`` is a pythonic interface to the [bong.tv]
-(http://www.bong.tv) platform.
+``pybongtvapi`` is a pythonic interface to the `bong.tv <http://www.bong.tv>`_ platform.
 
 Usage
 =====
@@ -20,8 +19,7 @@ Usage
     # or, if there is a bong.tv cookie somewhere on your hard disk
     api = pybongtvapi.API(cookie='path/to/your/cookie.txt')
 
-From here on, all methods outlined in [bong.tv's API specification]
-(http://help.bong.tv/customer/portal/articles/1292793-freie-api-zur-entwicklung)
+From here on, all methods outlined in `bong.tv's API specification <http://help.bong.tv/customer/portal/articles/1292793-freie-api-zur-entwicklung>`_
 can be called:
 
 .. code:: python
@@ -51,8 +49,7 @@ can be called:
     broadcasts = api.search_broadcasts('heute')
 
 You can also work with a higher-level API provided by ``pybongtvapi``.
-You can use the ``pybongtvapi.EPG`` to access the [BongGuide]
-(http://www.bong.tv/tv-programm/tabelle/sender/hauptsender/sendungen):
+You can use the ``pybongtvapi.EPG`` to access the `BongGuide <http://www.bong.tv/tv-programm/tabelle/sender/hauptsender/sendungen>`_:
 
 .. code:: python
 
@@ -65,8 +62,7 @@ You can use the ``pybongtvapi.EPG`` to access the [BongGuide]
         print(broadcast.title)
         print(broadcast.outline)
 
-Or use the ``pybongtvapi.PVR`` to access your personal [BongSpace]
-(http://www.bong.tv/videorekorder/meine-aufnahmen):
+Or use the ``pybongtvapi.PVR`` to access your personal `BongSpace <http://www.bong.tv/videorekorder/meine-aufnahmen>`_:
 
 .. code:: python
 
@@ -83,8 +79,7 @@ Changelog
 0.1
 ---
 
--  first public release. successor the [pybongtv]
-   (http://sourceforge.net/projects/pybongtv/) library.
+-  first public release. successor the `pybongtv <http://sourceforge.net/projects/pybongtv/>`_ library.
 
 License
 =======
