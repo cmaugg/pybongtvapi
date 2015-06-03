@@ -29,6 +29,10 @@ SOFTWARE.
 CHANGELOG
 =========
 
+0.2
+===
+* bugfix: Recording.is_scheduled() did'nt work
+
 0.1
 ===
 * first public release
@@ -51,7 +55,7 @@ import urllib
 import zlib
 
 __author__ = 'Christian Maugg <software@christian.maugg.de>'
-__version__ = version = '0.1'
+__version__ = version = '0.2'
 
 USER_AGENT = 'pybongtvapi/' + version
 HOST = 'bong.tv'
@@ -347,7 +351,7 @@ class Recording(Broadcast):
         return self.status.lower() == 'recorded'
 
     def is_scheduled(self):
-        return self.status.lower() == 'queued'
+        return self.status.lower() == 'scheduled'
 
     def get_url(self, recording_quality):
         if recording_quality not in Recording.QUALITIES:
