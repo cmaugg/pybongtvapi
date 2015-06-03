@@ -76,6 +76,11 @@ Or use the ``pybongtvapi.PVR`` to access your personal `BongSpace <http://www.bo
 Changelog
 =========
 
+0.2
+---
+
+- bugfix: Recording.is_scheduled() did'nt work
+
 0.1
 ---
 

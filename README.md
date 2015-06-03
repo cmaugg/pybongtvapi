@@ -70,6 +70,8 @@ for recording in pvr.recordings:
     print(recording.url)
 ```
 # Changelog
+## 0.2
+* bugfix: Recording.is_scheduled() did'nt work
 
 ## 0.1
 * first public release. successor the [pybongtv] (http://sourceforge.net/projects/pybongtv/) library.
